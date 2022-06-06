@@ -1,1 +1,1 @@
-## full-stack open by the University of Helsinki
+## Full-stack open by the University of Helsinki
