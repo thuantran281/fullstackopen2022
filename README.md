@@ -1,1 +1,2 @@
-# full-stack open 2022
+# Full-stack open 2022
+## by the University of Helsinki
