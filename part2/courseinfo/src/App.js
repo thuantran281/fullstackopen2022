@@ -20,12 +20,20 @@ const Part = ({ part }) => {
   );
 };
 
+const Total = ({ sum }) => {
+  return (
+    <b>
+      total of {sum} exercises. 
+    </b>
+  )
+}
+
 const Course = ({ course }) => {
-  //console.log(course);
   return (
     <div>
       <Header course={course} />
       <Content course={course} />
+      <Total sum={course.parts[0].exercises + course.parts[1].exercises + course.parts[2].exercises + course.parts[3].exercises} />
     </div>
   );
 };
@@ -50,6 +58,11 @@ const App = () => {
         exercises: 14,
         id: 3,
       },
+      {
+        name: "Redux",
+        exercises: 11,
+        id: 4,
+      }
     ],
   };
 
