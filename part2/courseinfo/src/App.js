@@ -31,6 +31,7 @@ const Total = ({ course }) => {
 };
 
 const Course = ({ course }) => {
+  //add the number of exercises in a traditional way, is to add element by element in the array
   return (
     <div>
       <Header course={course} />
