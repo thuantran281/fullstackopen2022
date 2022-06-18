@@ -1,8 +1,6 @@
-const Title = ({ title }) => {
-  return (
-    <h1>Web development curriculum</h1>
-  )
-}
+const Title = () => {
+  return <h1>Web development curriculum</h1>;
+};
 
 const Header = ({ course }) => {
   return <h2>{course.name}</h2>;
@@ -41,7 +39,7 @@ const Total = ({ course }) => {
 const Course = ({ course }) => {
   return (
     <div>
-      <Title course={course.title} />
+      <Title />
       <Header course={course} />
       <Content course={course} />
       <Total course={course} />
@@ -95,13 +93,11 @@ const App = () => {
     },
   ];
 
-  return (
-    courses.map((course) => 
-      <ul key={course.id}>
-        <Course course={course} />
-      </ul>
-    )
-  )
+  return courses.map((course) => (
+    <ul key={course.id}>
+      <Course course={course} />
+    </ul>
+  ));
 };
 
 export default App;
