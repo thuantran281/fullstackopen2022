@@ -10,8 +10,12 @@ const App = () => {
     //console.log("button clicked", event.target);
 
     const found = persons.find((person) => person.name === newName);
-    if (found) {
-      alert(`${newName} is already added to phonebook`);
+    const numberFound = persons.find((person) => person.number === newNumber);
+    //if (found) {
+    //  alert(`${newName} and ${newNumber} is already added to phonebook`);
+    //}
+    if (found && numberFound) {
+      alert(`${newName} and ${newNumber} is already added to phonebook`);
     } else {
       const personObject = {
         name: newName,
